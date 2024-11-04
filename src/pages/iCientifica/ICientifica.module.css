@@ -1,4 +1,4 @@
-.Dados {
+.Estagio {
     display: flex;
     position: relative;
     padding-top: 7.5rem;
@@ -7,9 +7,8 @@
 
 .Title {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.MenuDosDados{
-    position: relative;
-    margin-left: -1rem;
+    margin-left: 7rem;
+    margin-top: -6rem;
+    color: var(--branco);
+    line-height: 3;
 }
