@@ -69,12 +69,14 @@ export const AppContextProvider = (props) => {
                 { id: 2, nomeColuna: 'Lista sem Solicitação Estagio' },
                 { id: 3, nomeColuna: 'Lista com Solicitação Estagio' },
                 { id: 4, nomeColuna: 'Lista de Estagio Cancelado' },
-                { id: 5, nomeColuna: 'Dados Logistica'},
-                { id: 6, nomeColuna: 'Dados P.Quimico'},
-                { id: 7, nomeColuna: 'Dados E.E.Energetica' },
-                { id: 8, nomeColuna: 'Dados Estágio'},
-                { id: 9, nomeColuna: 'Dados Iniciação científica' },
-                { id: 10, nomeColuna: 'Dados Equivalência profissional' },
+                { id: 5, nomeColuna: 'Lista Total de Alunos Iniciação científica' },
+                { id: 6, nomeColuna: 'Lista sem Solicitação Iniciação científica' },
+                { id: 7, nomeColuna: 'Lista com Solicitação Iniciação científica' },
+                { id: 8, nomeColuna: 'Lista de Iniciação científica Cancelado' },
+                { id: 9, nomeColuna: 'Lista Total de Alunos Equivalência profissional' },
+                { id: 10, nomeColuna: 'Lista sem Solicitação Equivalência profissional' },
+                { id: 11, nomeColuna: 'Lista com Solicitação Equivalência profissional' },
+                { id: 12, nomeColuna: 'Lista de Equivalência profissional Cancelado' },
             ]);
         } catch (error) {
             console.error('Erro ao carregar dados:', error);

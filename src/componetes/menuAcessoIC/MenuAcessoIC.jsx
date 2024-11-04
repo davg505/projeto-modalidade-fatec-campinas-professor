@@ -26,13 +26,13 @@ export const MenuAcessoIC = () => {
     const handleClick = (id) => {
         setShowAba(true);
         setSelectedId(id);
-        if (id === 1) {
+        if (id === 5) {
             carregarTebelaTotalAlunoEstagio();
-        } else if (id === 2) {
+        } else if (id === 6) {
             carregarTebelaSemSolicitacaoEstagio();
-        } else if (id === 3) {
+        } else if (id === 7) {
             carregarTebelaComSolicitacaoEstagio();
-        } else if (id === 4) {
+        } else if (id === 8) {
             carregarTebelaEstagioCancelado();
         }
     };
@@ -40,7 +40,7 @@ export const MenuAcessoIC = () => {
     return (
         <div>
             {ListaMenuAcesso
-            .filter(item => item.id <= 4)
+            .filter(item => item.id >= 5 && item.id <= 8)
             .map(item => (
                 <button
                     key={item.id}
@@ -52,7 +52,7 @@ export const MenuAcessoIC = () => {
             ))}
 
             {/* Exibe a tabela ao abrir a aba */}
-            {showAba && selectedId === 1 && (
+            {showAba && selectedId === 5 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Iniciação Cientifica </h2>
                     <table>
@@ -95,7 +95,7 @@ export const MenuAcessoIC = () => {
             )}
 
               {/* Exibe a tabela ao abrir a aba */}
-              {showAba && selectedId === 2 && (
+              {showAba && selectedId === 6 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Iniciação Cientifica - Sem Solicitacao </h2>
                     <table>
@@ -138,7 +138,7 @@ export const MenuAcessoIC = () => {
             )}
 
               {/* Exibe a tabela ao abrir a aba */}
-              {showAba && selectedId === 3 && (
+              {showAba && selectedId === 7 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Iniciação Cientifica - Com solicitação</h2>
                     <table>
@@ -181,7 +181,7 @@ export const MenuAcessoIC = () => {
             )}
 
               {/* Exibe a tabela ao abrir a aba */}
-              {showAba && selectedId === 4 && (
+              {showAba && selectedId === 8 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Iniciação Cientifica - Cancelados </h2>
                     <table>

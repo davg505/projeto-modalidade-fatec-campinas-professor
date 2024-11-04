@@ -22,7 +22,7 @@ export const ICientifica = () => {
                 </div>
             )}
             <div className={style.Title}>
-                <h1>Área Iniciação Cientifica - GTI</h1>
+                <h1>Área I.Cientifica - GTI</h1>
             </div>
             <div >
                 <MenuAcessoIC/>

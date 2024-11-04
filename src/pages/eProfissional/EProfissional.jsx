@@ -22,7 +22,7 @@ export const EProfissional = () => {
                 </div>
             )}
             <div className={style.Title}>
-                <h1>Área Equivalencia Profissional - GTI</h1>
+                <h1>Área E.Profissional - GTI</h1>
             </div>
             <div >
                 <MenuAcessoEP />

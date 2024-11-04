@@ -26,13 +26,13 @@ export const MenuAcessoEP = () => {
     const handleClick = (id) => {
         setShowAba(true);
         setSelectedId(id);
-        if (id === 1) {
+        if (id === 9) {
             carregarTebelaTotalAlunoEstagio();
-        } else if (id === 2) {
+        } else if (id === 10) {
             carregarTebelaSemSolicitacaoEstagio();
-        } else if (id === 3) {
+        } else if (id === 11) {
             carregarTebelaComSolicitacaoEstagio();
-        } else if (id === 4) {
+        } else if (id === 12) {
             carregarTebelaEstagioCancelado();
         }
     };
@@ -40,7 +40,7 @@ export const MenuAcessoEP = () => {
     return (
         <div>
             {ListaMenuAcesso
-            .filter(item => item.id <= 4)
+            .filter(item => item.id >= 9 && item.id <= 12)
             .map(item => (
                 <button
                     key={item.id}
@@ -52,7 +52,7 @@ export const MenuAcessoEP = () => {
             ))}
 
             {/* Exibe a tabela ao abrir a aba */}
-            {showAba && selectedId === 1 && (
+            {showAba && selectedId === 9 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Equivalencia Profissional </h2>
                     <table>
@@ -95,7 +95,7 @@ export const MenuAcessoEP = () => {
             )}
 
               {/* Exibe a tabela ao abrir a aba */}
-              {showAba && selectedId === 2 && (
+              {showAba && selectedId === 10 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Equivalencia Profissional - Sem Solicitacao </h2>
                     <table>
@@ -138,7 +138,7 @@ export const MenuAcessoEP = () => {
             )}
 
               {/* Exibe a tabela ao abrir a aba */}
-              {showAba && selectedId === 3 && (
+              {showAba && selectedId === 11 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Equivalencia Profissional - Com solicitação</h2>
                     <table>
@@ -181,7 +181,7 @@ export const MenuAcessoEP = () => {
             )}
 
               {/* Exibe a tabela ao abrir a aba */}
-              {showAba && selectedId === 4 && (
+              {showAba && selectedId === 12 && (
                 <div className={style.tabela}>
                     <h2> Tabela - Equivalencia Profissional - Cancelados </h2>
                     <table>
